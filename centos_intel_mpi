@@ -1,0 +1,21 @@
+BootStrap:docker
+From:centos:latest
+
+
+
+%post
+
+# Omnipath user libraries
+yum install -y libhfi1 libpsm2
+yum install -y perftest
+
+
+# Other useful libraries
+yum install pciutils
+yum install which
+
+# Editors
+yum install vim emacs
+
+
+# Intel Parallel Studio
