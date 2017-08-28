@@ -8,13 +8,13 @@ From:centos:latest
 export INTEL=/curc/sw/intel/17.4/compilers_and_libraries_2017.4.196/linux
 
 # Intel Compiler
-source $INTEL/bin/compilervars.sh
+source $INTEL/bin/compilervars.sh intel64
 
 # Intel MPI
-source $INTEL/mpi/bin64/mpivars.sh
+source $INTEL/mpi/bin64/mpivars.sh intel64
 
 # Intel MKL
-source $INTEL/mkl/bin/mklvars.sh
+source $INTEL/mkl/bin/mklvars.sh intel64
 
 
 
@@ -37,4 +37,6 @@ yum install -y vim emacs
 # GCC make bison flex etc
 yum groupinstall -y 'Development Tools'
 
+# Version Control
+yum install -y git
 
