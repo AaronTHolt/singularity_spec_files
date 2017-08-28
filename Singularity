@@ -20,6 +20,8 @@ source $INTEL/mpi/bin64/mpivars.sh intel64
 # Intel MKL
 source $INTEL/mkl/bin/mklvars.sh intel64
 
+# Edit command prompt so it's short and shows you in a container
+export PS1="Singularity > "
 
 
 %post
