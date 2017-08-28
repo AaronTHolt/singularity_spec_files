@@ -6,6 +6,8 @@ From:centos:latest
 
 %runscript
 
+echo "Adding Intel compiler, mkl, and mpi to environment"
+
 # Intel ROOT
 export INTEL=/curc/sw/intel/17.4/compilers_and_libraries_2017.4.196/linux
 
